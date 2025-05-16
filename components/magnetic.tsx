@@ -66,4 +66,3 @@ export function Magnetic({ children, className = '', strength = 30 }: MagneticPr
     </div>
   )
 }
-      EOF
