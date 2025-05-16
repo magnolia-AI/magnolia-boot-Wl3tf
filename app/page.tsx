@@ -1,8 +1,7 @@
 'use client'
-
+import { useToast } from '@/components/ui/use-toast'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import { useToast } from '@/components/ui/use-toast'
 import { Magnetic } from '@/components/magnetic'
 import { Parallax } from '@/components/parallax'
 import { Reveal } from '@/components/reveal'
@@ -380,7 +379,6 @@ export default function Home() {
     </div>
   )
 }
-
 
 
 
