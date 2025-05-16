@@ -45,14 +45,14 @@ export function CustomCursor() {
 
   return (
     <div 
-      className={`custom-cursor ${isHovering ? 'hover' : ''} ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={}
       style={{
-        left: `${position.x}px`,
-        top: `${position.y}px`,
+        left: ,
+        top: ,
         transition: 'opacity 0.3s ease, transform 0.1s ease, width 0.3s ease, height 0.3s ease, background-color 0.3s ease',
         pointerEvents: 'none'
       }}
     />
   )
 }
-      EOF
+
