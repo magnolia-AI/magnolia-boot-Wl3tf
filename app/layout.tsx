@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={} suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning>
       <body className="h-full flex flex-col antialiased">
         <ThemeProvider defaultTheme="light" attribute="class">
           <SmoothScroll>
@@ -122,7 +122,6 @@ export default function RootLayout({
     </html>
   )
 }
-
 
 
 
