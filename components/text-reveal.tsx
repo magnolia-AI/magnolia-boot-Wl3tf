@@ -92,4 +92,3 @@ export function TextReveal({
     </div>
   )
 }
-      EOF
