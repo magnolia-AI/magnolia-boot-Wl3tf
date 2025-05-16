@@ -29,26 +29,22 @@ export default function RootLayout({
             This is a template header - replace with your own navigation
             Consider adding a logo, navigation links, theme toggle, etc.
           */}
-          <header className="border-b">
-            <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+          <header className="absolute top-0 left-0 right-0 z-50 bg-transparent">
+            <div className="container mx-auto px-4 h-20 flex items-center justify-between">
               <div className="flex items-center gap-2">
-
-                {/* 
-                  TEMPLATE SECTION: Mobile Navigation
-                  This is a template mobile navigation, uncomment to use
-                  Remember to update the mobile navigation in the mobile-nav.tsx file
-                */}
-                {/* <MobileNav /> */}
-                <div className="font-semibold">Template Logo</div>
+                <MobileNav />
+                <div className="font-bold text-2xl text-white">SAKURA</div>
               </div>
-              {/* <nav className="hidden md:flex gap-6">
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 1</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 2</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 3</a>
-              </nav> */}
-              <div className="flex items-center gap-2">
+              <nav className="hidden md:flex gap-8">
+                <a href="/" className="text-white hover:text-primary transition-colors font-medium">Home</a>
+                <a href="/menu" className="text-white hover:text-primary transition-colors font-medium">Menu</a>
+                <a href="#" className="text-white hover:text-primary transition-colors font-medium">About</a>
+                <a href="#" className="text-white hover:text-primary transition-colors font-medium">Gallery</a>
+                <a href="#" className="text-white hover:text-primary transition-colors font-medium">Contact</a>
+              </nav>
+              <div className="flex items-center gap-4">
                 <ThemeToggle />
-                <Button variant="outline" size="sm">Template Button</Button>
+                <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-white">Reserve</Button>
               </div>
             </div>
           </header>
@@ -68,50 +64,43 @@ export default function RootLayout({
             Consider adding navigation, social links, etc.
           */}
 
-          <footer className="border-t">
-            <div className="container mx-auto px-4 py-8">
+          <footer className="bg-secondary text-white">
+            <div className="container mx-auto px-4 py-16">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                  <h3 className="font-bold text-2xl mb-4">SAKURA</h3>
+                  <p className="text-sm text-white/80">
+                    Modern Japanese cuisine crafted with passion and precision. Experience the perfect balance of tradition and innovation.                  </p>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-4">Explore</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Our Menu</a></li>
+                    <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Reservations</a></li>
+                    <li><a href="#" className="text-white/80 hover:text-primary transition-colors">Private Events</a></li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-4">Hours</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li className="text-white/80">Monday - Thursday: 5PM - 10PM</li>
+                    <li className="text-white/80">Friday - Saturday: 5PM - 11PM</li>
+                    <li className="text-white/80">Sunday: 5PM - 9PM</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="font-semibold mb-4">Contact</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li className="text-white/80">Email: info@sakurasushi.com</li>
+                    <li className="text-white/80">Phone: (555) 123-4567</li>
+                    <li className="text-white/80">Address: 123 Sakura Lane, Tokyo District</li>
+                  </ul>
+                </div>
+              </div>
 
-              {/* 
-                TEMPLATE SECTION: Footer Content
-                This is a template footer content, uncomment to use
-                If its not commented out, add a border-t to the copywrite section
-              */}
-              {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                  <h3 className="font-semibold mb-3">Template Brand</h3>
-                  <p className="text-sm text-muted-foreground">
-                    A brief description of your company or project. Replace this with your own content.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-3">Links</h3>
-                  <ul className="space-y-2 text-sm">
-                    <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 1</a></li>
-                    <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 2</a></li>
-                    <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 3</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-3">Resources</h3>
-                  <ul className="space-y-2 text-sm">
-                    <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Resource 1</a></li>
-                    <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Resource 2</a></li>
-                    <li><a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Resource 3</a></li>
-                  </ul>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-3">Contact</h3>
-                  <ul className="space-y-2 text-sm">
-                    <li className="text-muted-foreground">Email: example@template.com</li>
-                    <li className="text-muted-foreground">Phone: (123) 456-7890</li>
-                    <li className="text-muted-foreground">Address: Template Street</li>
-                  </ul>
-                </div>
-              </div> */}
-
-              <div className="mt-8 pt-4 text-center">
-                <p className="text-sm text-muted-foreground">
-                  © 2024 Template Brand. All rights reserved.
+              <div className="mt-12 pt-6 text-center border-t border-white/20">
+                <p className="text-sm text-white/60">
+                  © 2025 Sakura Sushi. All rights reserved.
                 </p>
               </div>
             </div>
@@ -122,3 +111,6 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+
