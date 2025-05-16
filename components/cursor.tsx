@@ -1,4 +1,4 @@
-      'use client'
+'use client'
 
 import { useEffect, useState } from 'react'
 
@@ -45,14 +45,13 @@ export function CustomCursor() {
 
   return (
     <div 
-      className={}
+      className={`custom-cursor ${isHovering ? 'hover' : ''} ${isVisible ? 'opacity-100' : 'opacity-0'}`}
       style={{
-        left: ,
-        top: ,
+        left: `${position.x}px`,
+        top: `${position.y}px`,
         transition: 'opacity 0.3s ease, transform 0.1s ease, width 0.3s ease, height 0.3s ease, background-color 0.3s ease',
         pointerEvents: 'none'
       }}
     />
   )
 }
-
