@@ -8,8 +8,8 @@ import { MobileNav } from '@/components/mobile-nav'
 
 
 export const metadata: Metadata = {
-  title: 'Next.js Template',
-  description: 'A customizable template built with Next.js and Tailwind CSS',
+  title: 'Sakura Sushi | Modern Japanese Cuisine',
+  description: 'Experience the art of modern Japanese cuisine with innovative dishes and a unique dining atmosphere',
   icons: {
     icon: '/favicon.ico',
   },
