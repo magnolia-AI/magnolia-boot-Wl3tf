@@ -77,4 +77,3 @@ export default function MenuItemCard({
     </Card>
   )
 }
-      EOF
